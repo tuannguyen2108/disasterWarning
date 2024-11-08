@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISASTER WARNING SYSTEM</title>
+  <link rel="icon" type="image/png" href="img/tab-ic.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <header>
+    <div id="hd_container">
+      <h3>
+        <span class="title">DISASTER WARNING SYSTEM</span><br>
+        Thành viên:<br>
+        Nguyễn Châu Thảo Nguyên - Châu Quang Trí<br>
+        Giáo viên hướng dẫn: Nguyễn Thị Châu
+      </h3>
+    </div>
+    <div id="hd_line"></div>
+  </header>
+
+  <main>
+    <div class="sensor-box">
+      <p><strong style="color: rgb(33, 62, 224); font-size: 40px">Thông báo khẩn từ hệ thống</strong></p>
+      <p id="thongBao" style="font-size: 50px">Bình thường</p>
+    </div>
+
+    <div class="sensor-box">
+      <p><strong style="font-size: 30px">Ảnh Từ Camera Giám Sát</strong></p>
+      <img id="image" src="" alt="Ảnh từ Firebase Storage" />
+    </div>
+
+    <div class="sensor-box">
+      <p><strong style="font-size: 30px">Độ Ẩm Đất (Hạn Hán)</strong></p>
+      <img class="icon" src="images/soil_moisture.png" alt="Soil Moisture Icon" />
+      <div class="humidity-info">
+        <p>
+          <span id="doam_1_percent" style="font-size: 40px">0</span>
+          <span style="font-size: 40px">%</span>
+        </p>
+        <p id="doam_1_level" class="level-text">Không mưa</p>
+      </div>
+    </div>
+
+    <div class="sensor-box">
+      <p><strong style="font-size: 30px">Độ Ẩm Đất (Đất Ẩm)</strong></p>
+      <img class="icon" src="images/soil_moisture.png" alt="Soil Moisture Icon" />
+      <div class="humidity-info">
+        <p>
+          <span id="doam_2_percent" style="font-size: 40px">0</span>
+          <span style="font-size: 40px">%</span>
+        </p>
+        <p id="doam_2_level" class="level-text">Không mưa</p>
+      </div>
+    </div>
+
+    <div class="sensor-box">
+      <p><strong style="font-size: 30px">Lượng Mưa</strong></p>
+      <img class="icon" src="images/rain.png" alt="Rain Icon" />
+      <p id="mua" style="font-size: 40px">Không mưa</p>
+    </div>
+
+    <div class="sensor-box">
+      <p><strong style="font-size: 30px">Tốc Độ Gió</strong></p>
+      <img class="icon" src="images/win.png" alt="Wind Icon" />
+      <p id="gio" style="font-size: 40px">0 m/s</p>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+:root {
+    --background-color: #f2f2f2;
+    --primary-color: #58b1e5;
+    --text-color: #0a0d59;
+  }
+  
+  body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: var(--background-color);
+    background-image: url('images/nen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  #hd_container {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  #hd_line {
+    margin: 0 auto 15px;
+    background-color: #fff;
+    height: 3px;
+    width: 80%;
+  }
+  
+  #currentDateTime {
+    color: #020110;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sensor-box {
+    background-color: rgb(253, 249, 249);
+    border: 1px solid #474646;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    flex: 1 0 350px;
+    max-width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .sensor-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    width: 150px;
+  }
+  
+  strong {
+    font-size: 35px;
+  }
+  
+  .level-text {
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  
+  span {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  #mua, #gio, #thongBao {
+    color: var(--text-color);
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .soil-moisture-title {
+    font-size: 25px;
+  }
+  
+  .title {
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
+    color: var(--text-color);
+    text-transform: uppercase;
+  }
+  
